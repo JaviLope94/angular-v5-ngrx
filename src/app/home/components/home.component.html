@@ -1,0 +1,14 @@
+<p>
+  Welcome home!
+</p>
+<a [routerLink]="['/page1']" >Go to Page1</a>
+<hr>
+<br>
+<br>
+<div>
+  <button (click)="increment()">Increment</button>
+    <div>Current Count: {{ count$ | async }}</div>
+    <button (click)="decrement()">Decrement</button>
+
+    <button (click)="reset()">Reset Counter</button>
+</div>
